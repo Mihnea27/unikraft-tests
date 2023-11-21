@@ -30,3 +30,5 @@ Running 30s test @ http://172.44.0.2:8123/
 Requests/sec:   2000.01
 Transfer/sec:    433.59KB
 ```
+
+Results are similar using Unikraft v0.14
