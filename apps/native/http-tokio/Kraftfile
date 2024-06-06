@@ -1,0 +1,23 @@
+spec: v0.6
+
+name: http-tokio
+
+unikraft:
+    version: 0.16.2
+    kconfig:
+        CONFIG_PAGING: 'y'
+        CONFIG_HAVE_PAGING: 'y'
+        CONFIG_LIBUKMMAP: 'y'
+        CONFIG_LIBUKNETDEV_EINFO_LIBPARAM: 'y'
+        CONFIG_LIBPOSIX_EVENTFD: 'y'
+
+targets:
+- qemu/x86_64
+
+libraries:
+  lwip:
+    source: ../../../lib-lwip/
+    kconfig:
+       CONFIG_LWIP_POOLS: 'y'
+        
+  musl: 0.16.2
